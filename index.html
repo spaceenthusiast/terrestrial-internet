@@ -4,7 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TerrestrialInternet.com</title>
-    <style>
+    <script>
+function openEmail(domainName) {
+var user = 'spacedomains';
+var domain = 'proton.me';
+var subject = 'Domain Inquiry - ' + domainName;
+var body = 'Hi,\n\nI\'m interested in purchasing ' + domainName + '\n\nOffer: $\n\nName:\n\nThanks!';
+var mailtoLink = 'mailto:' + user + '@' + domain + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+window.location.href = mailtoLink;
+}
+</script>    <style>
         body {
             margin: 0;
             padding: 0;
@@ -71,16 +80,21 @@
         </div>
 
         <p>Contact me for inquiries about this domain:</p>
-        <p>
-            <a href="mailto:kumbarillatree@yahoo.com?subject=Domain%20Inquiry%20-%20terrestrialinternet.com&body=Hi,%0A%0AI'm%20interested%20in%20purchasing%20terrestrialinternet.com%0A%0AOther%20domains%20I'm%20interested%20in%20(optional):%0A%0AMy%20offer:%20$%0A%0AMy%20name:%0A%0AThanks!"
-            style="background-color: #28a745; color: white; padding: 16px 32px; text-decoration: none; border-radius: 8px; display: inline-block; font-size: 18px; font-weight: bold;">
-            Email Me
-            </a>
-        </p>
-        <p>Feel free to include your offer and any questions.</p>
-        <p>Or email me directly: kumbarillatree@yahoo.com</p>
 
-        <a href="https://spaceenthusiast.github.io" class="back">← Back to Portfolio</a>
+<p>
+<a href="javascript:void(0)" onclick="openEmail('terrestrialinternet.com')"
+style="background-color: #28a745; color: white; padding: 16px 32px; text-decoration: none; border-radius: 8px; display: inline-block; font-size: 18px; font-weight: bold; cursor: pointer;">
+Email Me
+</a>
+</p>
+
+<p>Or email me directly:</p>
+
+<img src="https://i.imgflip.com/agw139.jpg" alt="Email: spacedomains@proton.me" style="max-width: 600px; height: auto; display: block; margin: 20px auto;">
+
+<p>Feel free to include your offer and any questions.</p>
+
+<a href="https://spaceenthusiast.github.io" class="back">← Back to Portfolio</a>    
     </div>
 </body>
 </html>
